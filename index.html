@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator by vishal</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/vishal-bhangare/fap-v6.6.2@main/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="inputField">
+        <span id="ans">Simple Calculator</span>
+        <input
+          type="text"
+          name="operations"
+          id="operations"
+          value=""
+          onkeypress="return validate(event)"
+          readonly
+        />
+      </div>
+      <div class="buttons">
+        <button class="action">AC</button>
+        <button class="action" data-action="backspace">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button class="action operator">%</button>
+        <button class="action operator">/</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="action operator">*</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="action operator">-</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="action operator">+</button>
+        <button class="number">00</button>
+        <button class="number">0</button>
+        <button class="number">.</button>
+        <button class="action operator">=</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./keybinding.js"></script>
+  </body>
+</html>
+
+<!-- @vishalbhangare_2022 -->
